@@ -1,0 +1,10 @@
+{
+    "liveServer.settings.multiRootWorkspaceName": "localhost",
+    "files.autoSave": "onWindowChange",
+    "files.autoSaveDelay": 0,
+    "editor.tabCompletion": "on",
+    "editor.useTabStops": false,
+    "zenMode.hideTabs": false,
+    "workbench.editor.tabSizing": "shrink",
+    "editor.wordWrap": "on"
+}
