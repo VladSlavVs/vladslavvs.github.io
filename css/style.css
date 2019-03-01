@@ -137,6 +137,7 @@ header .links a:hover {
   border-radius: 50%;
   display: block;
   margin: 0 auto;
+  box-shadow: rgba(9, 121, 197, 0.5) 0 0 0 3px;
 }
 .main .content .social a {
   border-color: #0979c5;
