@@ -21,6 +21,16 @@ for (var i = 0; i < linkNav.length; i++) {
         }
     }, false);
 }
-$(document).ready(function() {
-   
+
+$('.parallax').on('mousemove', (e) => {
+    const x = e.pageX / $(window).width();
+    const y = e.pageY / $(window).height();
+
+    $('.parallax-bg').css({
+        '-webkit-transform' : 'translate(-' + x*30 + 'px, -' + y*30 + 'px)',
+        '-moz-transform'    : 'translate(-' + x*30 + 'px, -' + y*30 + 'px)',
+        '-ms-transform'     : 'translate(-' + x*30 + 'px, -' + y*30 + 'px)',
+        '-o-transform'      : 'translate(-' + x*30 + 'px, -' + y*30 + 'px)',
+        'transform'         : 'translate(-' + x*30 + 'px, -' + y*30 + 'px)'
+      });
 });
