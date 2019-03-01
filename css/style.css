@@ -179,6 +179,7 @@ header .links a:hover {
   text-align: center;
 }
 .portfolio .row {
+  margin-top: 50px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -209,6 +210,11 @@ header .links a:hover {
 }
 .portfolio .row .box .tools a {
   color: #7952B3;
+}
+.portfolio .row .box > small {
+  display: block;
+  margin-top: 20px;
+  color: #cccccc;
 }
 .portfolio .row .box .button {
   margin-top: 40px;
