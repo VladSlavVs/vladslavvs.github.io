@@ -1,21 +1,8 @@
-@font-face {
-    font-family: 'icons';
-    src: url('./font/icons.eot?21961656');
-    src: url('./font/icons.eot?21961656#iefix') format('embedded-opentype'),
-         url('./font/icons.woff?21961656') format('woff'),
-         url('./font/icons.ttf?21961656') format('truetype'),
-         url('./font/icons.svg?21961656#icons') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
 
 
 @bg-color: #000318;
 @active: #0979c5;
-
-
-
 
 body {
 	color: @bg-color;
@@ -26,7 +13,7 @@ section {
     z-index: 0;
 }
 a {
-	&:hover {text-decoration: none}
+	&:hover, &:focus {text-decoration: none}
 }
 h3 {
 	margin: 0;
@@ -54,7 +41,7 @@ h3 {
         border-radius: 100px;
         color: @active;
         transition: 0.5s;
-        &:hover {
+        &:hover, &:focus {
             color: @bg-color;
         }
     }
@@ -87,7 +74,7 @@ header{
             opacity: .5;
             font-size: 20px;
             transition: 0.5s;
-            &:hover {opacity: 1;}
+            &:hover, &:focus {opacity: 1;}
         }
     }
 }
@@ -97,10 +84,8 @@ header{
     &-bg {
         position: absolute;
         z-index: -1;
-        width: 110%;
-        height: 110%;
-        background-size: cover;
-        background-position: center center;
+        height: 140vh;
+        margin-top: 20vh;
     }
 }
 
@@ -110,9 +95,7 @@ header{
     justify-content: center;
     height: 100vh;
     overflow: hidden;
-    .parallax-bg {
-        background-image: url(../img/main-bg.jpg);
-    }
+    .parallax-bg {position: fixed;}
     &::before {
         content: 'Portfolio';
         position: absolute;
@@ -154,7 +137,7 @@ header{
             color: @active;
             margin: 20px 0 40px;
             opacity: .7;
-            &:hover {opacity: 1;}
+            &:hover, &:focus {opacity: 1;}
         }
         .links {
             position: absolute;
@@ -172,7 +155,7 @@ header{
                 transition: 0.5s;
                 &:first-child {width: 60%; border-right: 1px solid mix(@active, rgba(255, 255, 255, .9), 30%)};
                 &:last-child {width: 40%;}
-                &:hover {background: @active;}
+                &:hover, &:focus {background: @active;}
             }
         }
     }
@@ -194,7 +177,7 @@ header{
 			-webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
 			box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
 			transition: 0.5s;
-            &:hover {
+            &:hover, &:focus {
 				-webkit-box-shadow: 0 15px 60px rgba(0, 0, 0, .3);
 				box-shadow: 0 15px 60px rgba(0, 0, 0, .3);   
             }
@@ -249,7 +232,7 @@ header{
                         opacity: 1;
                         transition-delay: .2s;
                     }
-                    &:hover {
+                    &:hover, &:focus, &:focus {
                         color: #fff;
                         &::before,
                         &::after {
@@ -263,9 +246,7 @@ header{
 }
 
 .about {
-    background: #2c332c;
     .parallax-bg {
-        background-image: url(../img/about-bg.jpg);
-        height: 120%;
+        margin: 0;
     }
 }
