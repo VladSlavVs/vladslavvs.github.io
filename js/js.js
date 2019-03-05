@@ -30,3 +30,11 @@ $('#about').on('mousemove', (e) => {
         'transform'         : 'translate(-' + x*30 + 'px, -' + y*30 + 'px)'
     });
 });
+
+document.body.onload = function() {
+    setTimeout(function() {
+        $('.loader').fadeOut()
+    }, 1000)
+}
+
+  

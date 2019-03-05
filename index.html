@@ -29,7 +29,6 @@
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Rubik:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/icons.css">
-	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"> -->
 
 	<!-- Css-files -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -39,15 +38,25 @@
 
 <body>
 
-	<header class="d-flex">
-		<div class="links d-flex">
+	<!-- Loader -->
+	<div class="loader">
+		<div class="loader-frame df">
+			<img src="img/loader.svg" alt="circle-loader">
+		</div>
+	</div>
+
+	<!-- Header -->
+	<header class="df">
+		<div class="links df">
 			<a target="blanc" href="https://vk.com/vladslavvs"><i class="ico-vk"></i></a>
 			<a target="blanc" href="https://vk.com/vladslavvs"><i class="ico-facebook"></i></a>
 			<a target="blanc" href="https://twitter.com/vladslavvs"><i class="ico-twitter"></i></a>
+			<a href="#main" class="logo ml-auto"><img src="img/logo.svg" alt="logo"></a>
 		</div>
 	</header>
 
-	<section class="main parallax d-flex" id="main">
+	<!-- Main -->
+	<section class="main parallax df" id="main">
 		<img src="img/main-bg.jpg" alt="bg" class="parallax-bg">
 		<div class="content">
 			<img src="img/developer.jpg" alt="I">
@@ -55,18 +64,19 @@
 				<h1>Владислав Атаханов</h1>
 				<p>Frontent-разработчик</p>
 			</div>
-			<div class="social">
+			<div class="social df">
 				<a target="blanc" href="https://vk.com/vladslavvs"><i class="ico-vk"></i></a>
 				<!-- <a target="blanc" href="https://vk.com/vladslavvs"><i class="ico-facebook"></i></a> -->
 				<a target="blanc" href="https://twitter.com/vladslavvs"><i class="ico-twitter"></i></a>
 			</div>
-			<div class="links d-flex">
+			<div class="links df">
 				<a href="#portfolio">Мои работы</a>
 				<a href="https://vk.me/vladslavvs" target="blanc">Написать <i class="ico-vk"></i></a>
 			</div>
 		</div>
 	</section>
 
+	<!-- Portfolio -->
 	<section class="portfolio" id="portfolio">
 		<div class="container">
 			<h2>Мои работы</h2>
@@ -87,10 +97,11 @@
 		</div>
 	</section>
 
+	<!-- About -->
 	<section class="about parallax" id="about">
 		<img src="img/about-bg.jpg" alt="bg" class="parallax-bg">
 		<div class="content">
-			
+			<h2>Обо мне</h2>
 		</div>
 	</section>
 
