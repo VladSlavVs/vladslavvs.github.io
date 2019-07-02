@@ -6,6 +6,7 @@ body {
 p {
     font-size: 18px;
     font-weight: 400;
+    letter-spacing: 0.05em;
 }
 h2 {
     margin: 0;
@@ -38,7 +39,7 @@ a {
 .first {
     height: 100vh;
     background: url(../img/first.jpg);
-    background-position: bottom left;
+    background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
@@ -154,7 +155,7 @@ main {
         padding: 0 15px
     }
 	.first h1 {
-        font-size: 50px;
+        font-size: 75px;
     }
     main {
 
@@ -179,7 +180,12 @@ main {
     }
 }
 @media screen and (max-width: 500.5px) {
-	main footer a {
-        font-size: 14px;
+	main {
+        footer a {
+            font-size: 14px;
+        }
+    }
+	.first h1 {
+        font-size: 60px;
     }
 }
