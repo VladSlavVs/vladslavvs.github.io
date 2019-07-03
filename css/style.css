@@ -14,9 +14,6 @@ h2 {
   padding: 0;
   font-size: 28px;
 }
-img {
-  width: 100%;
-}
 a {
   color: #ffffff;
   text-decoration: none;
@@ -103,15 +100,19 @@ main .jobs .wrap .flock::before {
 main .about .row {
   align-items: center;
 }
+main .about .row img {
+  width: 100%;
+}
 main footer a {
   margin-bottom: 10px;
   transition: 0.5s;
 }
 main footer .logo {
-  height: 50px;
+  height: 60px;
 }
 main footer .logo img {
-  height: 50px;
+  margin-left: 10px;
+  height: 60px;
 }
 main footer .link a:hover {
   opacity: 0.5;
